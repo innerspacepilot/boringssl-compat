@@ -32,6 +32,7 @@ ifeq ($(TARGET_REQUIRES_B64_COMPAT),true)
 LOCAL_SRC_FILES += $(B64_FILES)
 endif
 
+LOCAL_CFLAGS := -Wno-error
 LOCAL_SHARED_LIBRARIES := liblog libcrypto
 LOCAL_MODULE := libboringssl-compat
 LOCAL_MODULE_TAGS := optional
